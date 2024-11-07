@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head lang="AR" >
+<body>
+    <!-- The sidebar -->
+<div class="sidebar">
+    <a href="../../main/index.html"  class="logo">المشتل  <i>ICON</i></a>
+    <a href="../../خامات/خامه/index.html">خامات</a>
+    <a href="../../عمال/موظفين/index.html">عمال</a>
+    <a href="../../حجز وزراعه/main/index.html">حجز وزراعه </a>
+    <a href="../../ماليات/main/index.html">ماليات</a>
+    <a class="active" href="../../عملاء/main/index.html">عملاء</a>
+  </div>
+  <div class="content">
+    <section>
+      <div class="table-container">
+        <div class="headernav">
+            <h1>عملاء - مميز</h1>
+        </div>
+        <button id="addRowBtn" class="add-row">إضافة </button>
+        <button id="mininav-active" class="mininav" href="../عام/index.html">كشف حساب</button>
+        <div class="thf">
+            <div class="tableHead"> اسم العميل : <span> مصطفي عبد الرحمن</span> </div>
+            <div class="tableHead">  العنوان : <span>برج العرب </span> </div>
+            <div class="tableHead"> رقم التلفون :<span>0124578963</span></div>
+            </div>
+        <table id="editableTable">
+            <thead>
+                <tr>
+                    <th>تاريخ خروج الشتله</th>
+                    <th>نوع /صنف </th>
+                    <th> عدد صواني بيع</th>
+                    <th>عدد صواني حجز </th>
+                    <th>سعر الصنيه </th>
+                    <th>اجمالي سعر شتلات </th>
+                    <th>سداد نقدي </th>
+                    <th>خصم </th>
+                    <th>تاريخ سداد</th>
+                    <th>ملاحظات</th>
+                    <th>صواني فارغ </th>
+                    <th>ملاحظات</th>
+                    <th>تاريخ </th>
+                    <th>بيان </th>
+                    <th>قيمه</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dynamic rows will be added here -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">تراجع صافي فرع :</td>
+                    <td colspan="2">باقي حساب :</td>
+                    <td colspan="2">اجمالي خصم :</td>
+                    <td colspan="2">اجمالي سداد :</td>
+                    <td colspan="2">اجمالي مستحق :</td>
+                    <td colspan="3">اجمالي عدد صناديق :</td>
+                    <td colspan="3">اجمالي سداد:</td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="pagination">
+            <a href="#">Previous</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">67</a>
+            <a href="#">68</a>
+            <a href="#">Next</a>
+        </div>
+    </div>
+    </section>
+    <button class="print-btn" onclick="window.print()">print</button>
+  </div>  
+  <script src="script.js"></script>
+</body>
+</html>

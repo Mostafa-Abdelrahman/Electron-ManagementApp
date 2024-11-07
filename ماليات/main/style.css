@@ -1,0 +1,140 @@
+body{
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+
+}
+.sidebar {
+width: 150px;
+background-color: #3b3b3b;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+display: block;
+color: rgb(223, 223, 223);
+padding: 16px;
+text-align: center;
+margin: 40px 0px;
+text-decoration: none;
+}
+.sidebar .logo{
+    margin: 0px;
+    padding: 50px 0px;
+}
+/* Active/current link */
+.sidebar a.active {
+background-color: #5d6864;
+color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+background-color: #5d6864;
+color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+margin-right: 150px;
+padding: 1px 16px;
+height:750px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+.sidebar {
+width: 100%;
+height: auto;
+position: relative;
+}
+.sidebar a {float: right;}
+div.content {margin-right: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+.sidebar a {
+text-align: center;
+float: none;
+}
+}
+/* -------------------------------------------------------------------- */
+.content {
+    display: flex;
+}
+.content .container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 20px;
+}
+.content .main-content {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.content .main-content h1 {
+    font-size: 46px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.content .main-content p {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+.content .print-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+}
+.content .monthbar {
+    margin-top: 20px;
+    width: 120px;
+    background-color: #f0e4ff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 10px;
+}
+.content .monthbar a {
+    text-decoration: none;
+}
+.content .monthbar .month {
+    width: 100px;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    background-color: #d2afff;
+    border-radius: 4px;
+    color: #000;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+.content .monthbar .month:hover {
+    background-color: #b38fd1;
+}
